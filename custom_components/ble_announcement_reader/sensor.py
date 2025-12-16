@@ -88,7 +88,7 @@ class BLEAnnouncementSensor(SensorEntity):
         Questo è un esempio per il tuo dispositivo (1744 = 0x6D0):
         Formato: 01 20 68 ac 58 89 a9 c0 a9 01 00 00 00 00 00 00 00 02 03 00
         """
-        if mfg_id == 0x6D0 or mfg_id == 1744:  # Esempio per il tuo dispositivo
+        if mfg_id == 0x6D0 or mfg_id == 0xffd0:  # Esempio per il tuo dispositivo
             try:
                 hex_str = data.hex() if isinstance(data, bytes) else data
                 _LOGGER.info(f"Manufacturer data (1744): {hex_str}")
