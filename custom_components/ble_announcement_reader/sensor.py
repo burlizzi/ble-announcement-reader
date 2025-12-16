@@ -40,6 +40,8 @@ class BLEAnnouncementSensor(SensorEntity):
             devices = await scanner.discover()
             
             for device in devices:
+                _LOGGER.debug(f"Parsing {device.address}")
+    
                 if device.address.upper() == self._device_address.upper():
                     await self._parse_ble_announcement(device)
                     break
