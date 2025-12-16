@@ -55,7 +55,8 @@ class BLEAnnouncementSensor(SensorEntity):
             "connectable": 1,
             "tx_power": None,
         }
-        
+        _LOGGER.debug(f"Parsed BLE announcement from {device.address}: {self._extra_state_attributes}")
+    
         # Parse manufacturer data
         if hasattr(device, 'metadata') and device.metadata:
             metadata = device.metadata
