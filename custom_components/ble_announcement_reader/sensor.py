@@ -51,7 +51,7 @@ class BLEAnnouncementSensor(SensorEntity):
         self._extra_state_attributes = {
             "address": device.address,
             "name": device.name or "Unknown",
-            "rssi": device.rssi,
+            "rssi": 0,
             "connectable": device.connectable,
             "tx_power": None,
         }
