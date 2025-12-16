@@ -1,0 +1,10 @@
+{
+  "domain": "ble_announcement_reader",
+  "name": "BLE Announcement Reader",
+  "codeowners": ["@burlizzi"],
+  "config_flow": true,
+  "documentation": "https://github.com/burlizzi/ble-announcement-reader",
+  "requirements": ["bleak>=0.20.0"],
+  "version": "1.0.0",
+  "homeassistant": "2024.1.0"
+}
