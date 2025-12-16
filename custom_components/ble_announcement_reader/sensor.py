@@ -52,7 +52,7 @@ class BLEAnnouncementSensor(SensorEntity):
             "address": device.address,
             "name": device.name or "Unknown",
             "rssi": 0,
-            "connectable": device.connectable,
+            "connectable": 1,
             "tx_power": None,
         }
         
